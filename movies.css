@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav .logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+nav .search-bar button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .search-bar button:hover {
+    background-color: #ff4500;
+}
+
+.img {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .logo h1 {
+        font-size: 20px;
+    }
+
+    nav .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav .search-bar input[type="text"] {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+
+    nav .search-bar button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo h1 {
+        font-size: 18px;
+    }
+
+    nav .search-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .search-bar input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav .search-bar button {
+        width: 100%;
+    }
+
+    .img {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
